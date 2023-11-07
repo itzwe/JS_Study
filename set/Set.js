@@ -30,3 +30,15 @@ const setArr = [...arrSet]; // setArr => [1,3,5]
 
 // 바로 중복 값 제거하기
 let uniqueNum  = [... new Set(a)];
+
+
+//  집합 연산 
+
+const set1 = new Set([1, 2, 3, 4, 5]);
+const set2 = new Set([4, 5, 6, 7, 8]);
+
+//  합집합
+const union = new Set([...set1, ...set2]);
+console.log([...union]);//  [1, 2, 3, 4, 5, 6, 7, 8] => 중복된 값들은 제거됨.
+
+// 교집합
