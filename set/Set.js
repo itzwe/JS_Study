@@ -42,3 +42,7 @@ const union = new Set([...set1, ...set2]);
 console.log([...union]);//  [1, 2, 3, 4, 5, 6, 7, 8] => 중복된 값들은 제거됨.
 
 // 교집합
+const intersection = new Set([...set1].filter(item=> set2.has(item)));  // [4,5]
+
+// 차집합
+const difference  = new Set([...set1].filter(item=> !set2.has(item))); // [1,2,3]
